@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>test covid</h1>
+    <h4>Total Kasus : <span id="total_cases"></span></h4> <br>
+    <h4>Total Kasus Aktif : <span id="total_active_cases"></span></h4> <br>
+    <h4>Total Sembuh : <span id="total_recovered"></span></h4> <br>
+    <h4>Total Meninggal : <span id="total_deaths"></span></h4> <br>
+    <h4>Total Kasus Baru Hari Ini : <span id="total_new_cases_today"></span></h4> <br>
+    <h4>Total Kasus Meninggal Hari Ini : <span id="total_new_deaths_today"></span></h4> <br>
+    <h4>Sumber : <span id="source"></span></h4> <br>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script type="text/javascript">
+     $(document).ready(function(){
+
+      // data all global
+       $.ajax({
+         url: 'https://thevirustracker.com/free-api?global=stats',
+         dataType: 'json',
+         success: function(data) {
+           var status = data.stat;
+           var total_kasus = data.results[0].total_cases;
+           var total_sembuh = data.results[0].total_recovered;
+           var total_meninggal = data.results[0].total_deaths;
+           var total_kasus_baru_hari_ini = data.results[0].total_new_cases_today;
+           var total_kasus_meninggal_hari_ini = data.results[0].total_new_deaths_today;
+           var total_kasus_aktif = data.results[0].total_active_cases;
+           var sumber = data.results[0].source.url;
+
+           if (status = 'ok') {
+              // swal('Success', 'Test Connected', 'success');
+              $('#total_cases').html(total_kasus);
+              $('#total_active_cases').html(total_kasus_aktif);
+              $('#total_recovered').html(total_sembuh);
+              $('#total_deaths').html(total_meninggal);
+              $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
+              $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
+              $('#source').html(sumber);
+           } else {
+              swal('Error', 'Server API Error', 'error');
+           }
+           // console.log(data.results[0].total_cases);
+           // console.log(data);
+         }
+        });
+
+        // data indonesia
+        $.ajax({
+          url: 'https://thevirustracker.com/free-api?countryTotal=ID',
+          dataType: 'json',
+          success: function(data) {
+            console.log(data);
+          }
+        });
+
+     });
+  </script>
+</html>

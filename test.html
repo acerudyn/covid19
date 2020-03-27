@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <h1>test covid</h1>
+  <h4>Total Kasus : <span id="total_cases"></span></h4> <br>
+  <h4>Total Kasus Aktif : <span id="total_active_cases"></span></h4> <br>
+  <h4>Total Sembuh : <span id="total_recovered"></span></h4> <br>
+  <h4>Total Meninggal : <span id="total_deaths"></span></h4> <br>
+  <h4>Total Kasus Baru Hari Ini : <span id="total_new_cases_today"></span></h4> <br>
+  <h4>Total Kasus Meninggal Hari Ini : <span id="total_new_deaths_today"></span></h4> <br>
+  <h4>Sumber : <span id="source"></span></h4> <br>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    // data all global
+    $.ajax({
+      url: 'https://thevirustracker.com/free-api?global=stats',
+      dataType: 'json',
+      success: function(data) {
+        var status = data.stat;
+        var total_kasus = data.results[0].total_cases;
+        var total_sembuh = data.results[0].total_recovered;
+        var total_meninggal = data.results[0].total_deaths;
+        var total_kasus_baru_hari_ini = data.results[0].total_new_cases_today;
+        var total_kasus_meninggal_hari_ini = data.results[0].total_new_deaths_today;
+        var total_kasus_aktif = data.results[0].total_active_cases;
+        var sumber = data.results[0].source.url;
+
+        if (status = 'ok') {
+          // swal('Success', 'Test Connected', 'success');
+          $('#total_cases').html(total_kasus);
+          $('#total_active_cases').html(total_kasus_aktif);
+          $('#total_recovered').html(total_sembuh);
+          $('#total_deaths').html(total_meninggal);
+          $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
+          $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
+          $('#source').html(sumber);
+        } else {
+          swal('Error', 'Server API Error', 'error');
+        }
+        // console.log(data.results[0].total_cases);
+        // console.log(data);
+      }
+    });
+
+    // data indonesia
+    $.ajax({
+      url: 'https://thevirustracker.com/free-api?countryTotal=ID',
+      dataType: 'json',
+      success: function(data) {
+        console.log(data);
+      }
+    });
+
+  });
+</script>
+
+</html>
