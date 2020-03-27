@@ -485,7 +485,7 @@ background: url(../images/covid.jpg) ;
 -ms-background-size: cover;
 }
 .slider-img {
-    padding: 15em 0em 0 4em;
+    padding: 15em 0em 0 0em;
 }
 .slider-info h4 {
     color: #fff;
@@ -774,7 +774,7 @@ footer {
     min-height: 760px;
 }
 .slider-img {
-    padding: 14em 0em 0 4em;
+    padding: 14em 0em 0 0em;
 }
 h3.title {
     font-size: 38px;
@@ -816,13 +816,13 @@ h3.title {
     min-height: 680px;
 }
 .slider-img {
-    padding: 10.3em 0em 0 4em;
+    padding: 10.3em 0em 0 0em;
 }
 .slider-info {
     padding: 6em 2.5em;
 }
 .slider-img {
-    padding: 12.5em 0em 0 4em;
+    padding: 12.5em 0em 0 0em;
 }
 p.single-txt-line {
     letter-spacing: 2px;
@@ -896,7 +896,7 @@ h3.title {
     min-height: 640px;
 }
 .slider-img {
-    padding: 11.5em 0em 0 4em;
+    padding: 11.5em 0em 0 0em;
 }
 .service-icon span {
     font-size: 24px;
@@ -1029,7 +1029,7 @@ h3.title {
     width: 41%;
 }
 .slider-img {
-    padding: 11em 0em 0 2.5em;
+    padding: 11em 0em 0 0em;
 	}
 .title-w3ls-text p {
     padding: 0em 4em;
@@ -1057,7 +1057,7 @@ h3.title {
     width: 42%;
 }
 .slider-img {
-    padding: 11.2em 0em 0 2em;
+    padding: 11.2em 0em 0 0em;
 }
 .main-top {
     min-height: 548px;
@@ -1211,7 +1211,7 @@ h3.title {
     min-height: 476px;
 }
 .slider-img {
-    padding: 10.5em 0em 0 2em;
+    padding: 10.5em 0.5em 0 0.5em;
 }
 .outs_more-buttn a {
     font-size: 13px;
@@ -1254,7 +1254,7 @@ h3.title {
     width: 90%;
 }
 .slider-img {
-    padding: 10.5em 0em 0 1.5em;
+    padding: 10.5em 0.5em 0 0.5em;
 }
 .about-two-side, .gallery-img-grid {
     width: 95%;

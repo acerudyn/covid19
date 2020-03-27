@@ -82,7 +82,7 @@
       <h3 class="title text-center mb-2" style="color:#ffffff;">Monitoring Virus Corona</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
         <p style="color:#f8a640;">Selamat datang di website monitoring virus corona, data yang disajikan disini akan terus terupdate
-          secara realtime yang bersumber dari <span id="source"></span> </p>
+          secara realtime yang bersumber dari <br> <span id="source"></span> </p>
       </div>
       <!-- </div> -->
     </div>
@@ -179,46 +179,46 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
+          <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
               <span><img src="images/sick.png" alt="sick" width="75" height="75"></span>
             </div>
             <h5>Total Kasus</h5>
             <p class="mt-2">
-              <h4 id="id_total_cases"></h4>
+              <h4 id="id_total_cases" style="color:#f8a640;"></h4>
             </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
+          <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
               <span><img src="images/sad2.png" alt="sad" width="75" height="75"></span>
             </div>
             <h5>Total Kasus Aktif</h5>
             <p class="mt-2">
-              <h4 id="id_total_active_cases"></h4>
+              <h4 id="id_total_active_cases" style="color:#f8a640;"></h4>
             </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
+          <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
               <span><img src="images/happy.png" alt="happy" width="75" height="75"></span>
             </div>
             <h5>Total Sembuh</h5>
             <p class="mt-2">
-              <h4 id="id_total_recovered"></h4>
+              <h4 id="id_total_recovered" style="color:#f8a640;"></h4>
             </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
+          <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
               <span><img src="images/cry.png" alt="cry" width="75" height="75"></span>
             </div>
             <h5>Total Meninggal</h5>
             <p class="mt-2">
-              <h4 id="id_total_deaths"></h4>
+              <h4 id="id_total_deaths" style="color:#f8a640;"></h4>
             </p>
           </div>
         </div>
@@ -434,7 +434,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="js/momentjs.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script> <!-- http://numeraljs.com/ -->
+<script src="js/momentjs.js"></script> <!-- https://momentjs.com/ -->
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -442,19 +443,22 @@
     var time = moment().format('DD-MMM-YYYY H:mm:ss');
     $('.updated').html('Update Terakhir : ' + time);
 
-    // data all global
+    // data global
     $.ajax({
       url: 'https://thevirustracker.com/free-api?global=stats',
       dataType: 'json',
       success: function(data) {
         var status = data.stat;
-        var total_kasus = data.results[0].total_cases;
-        var total_sembuh = data.results[0].total_recovered;
-        var total_meninggal = data.results[0].total_deaths;
-        var total_kasus_baru_hari_ini = data.results[0].total_new_cases_today;
-        var total_kasus_meninggal_hari_ini = data.results[0].total_new_deaths_today;
-        var total_kasus_aktif = data.results[0].total_active_cases;
+        var total_kasus = numeral(data.results[0].total_cases).format('0,0');
+        var total_sembuh = numeral(data.results[0].total_recovered).format('0,0');
+        var total_meninggal = numeral(data.results[0].total_deaths).format('0,0');
+        var total_kasus_baru_hari_ini = numeral(data.results[0].total_new_cases_today).format('0,0');
+        var total_kasus_meninggal_hari_ini = numeral(data.results[0].total_new_deaths_today).format('0,0');
+        var total_kasus_aktif = numeral(data.results[0].total_active_cases).format('0,0');
         var sumber = data.results[0].source.url;
+
+        var number = numeral(total_kasus);
+        var string = number.format('0,0'); // '1,000'
 
         if (status = 'ok') {
           // swal('Success', 'Test Connected', 'success');
@@ -479,18 +483,16 @@
       dataType: 'json',
       success: function(data) {
         var id_status = data.stat;
-        var id_total_kasus = data.countrydata[0].total_cases;
-        var id_total_sembuh = data.countrydata[0].total_recovered;
-        var id_total_meninggal = data.countrydata[0].total_deaths;
-        var id_total_kasus_aktif = data.countrydata[0].total_active_cases;
-        // var sumber = data.countrydata[0].source.url;
+        var id_total_kasus = numeral(data.countrydata[0].total_cases).format('0,0');
+        var id_total_sembuh = numeral(data.countrydata[0].total_recovered).format('0,0');
+        var id_total_meninggal = numeral(data.countrydata[0].total_deaths).format('0,0');
+        var id_total_kasus_aktif = numeral(data.countrydata[0].total_active_cases).format('0,0');
 
         if (id_status = 'ok') {
           $('#id_total_cases').html(id_total_kasus);
           $('#id_total_active_cases').html(id_total_kasus_aktif);
           $('#id_total_recovered').html(id_total_sembuh);
           $('#id_total_deaths').html(id_total_meninggal);
-          // $('#source').html('<a href="'+sumber+'" target="_blank">'+sumber+'</a>');
         } else {
           swal('Error', 'Server API Error', 'error');
         }
