@@ -236,6 +236,36 @@
         </p>
       </div>
       <div class="row">
+
+        <table class="table table-striped table-bordered table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col" width="5%" class="text-center">NO</th>
+              <th scope="col">PROVINSI</th>
+              <th scope="col" width="15%">POSITIF</th>
+              <th scope="col" width="15%">SEMBUH</th>
+              <th scope="col" width="15%">MENINGGAL</th>
+            </tr>
+          </thead>
+          <tbody id="data_table">
+          <!-- space for data from ajax -->
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </section>
+  <!--//service -->
+
+  <!-- service -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="pencegahan">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title text-center mb-2">What We Do For Babies</h3>
+      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum
+        </p>
+      </div>
+      <div class="row">
         <div class="col-lg-4 col-md-6 my-3">
           <div class="service-grid-wthree ">
             <div class="row">
@@ -499,6 +529,47 @@
         // console.log(data.results[0].total_cases);
         // console.log(data.countrydata[0]);
       }
+    });
+
+    // data provonsi indonesia
+    $.ajax({
+      url: 'https://api.kawalcorona.com/indonesia/provinsi',
+      dataType: 'json',
+      type: 'GET',
+      crossOrigin: true,
+      accept: 'application/json',
+      success: function(data) {
+        console.log(data);
+      }
+    });
+
+    var data_person = [
+        {
+            id: 1,
+            firstname: "Gandalf",
+            lastname: "Greyhaem",
+            email: "Greyhaem@test.com",
+            twitter: "@Greyhaem"
+        },
+        {
+            id: 2,
+            firstname: "Bilbo",
+            lastname: "Baggins",
+            email: "Bilbo@test.com",
+            twitter: "@Baggins"
+        },
+        {
+            id: 3,
+            firstname: "Frodo",
+            lastname: "Baggins",
+            email: "Frodo@test.com",
+            twitter: "@Frodo"
+        }
+    ];
+
+    $('#data_table').empty();
+    $.each(data_person, function() {
+      $('#data_table').append('<tr><td class="text-center">'+this.id+'</td><td>'+this.firstname+'</td><td>'+this.lastname+'</td><td>'+this.email+'</td><td>'+this.twitter+'</td></tr>');
     });
 
   });
