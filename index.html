@@ -53,7 +53,7 @@
             <a href="#indonesia">Indonesia</a>
           </li>
           <li>
-            <a href="#" class="belum">Provinsi</a>
+            <a href="provinsi.html">Provinsi</a>
           </li>
           <li>
             <a href="#pencegahan">Pencegahan</a>
@@ -339,32 +339,32 @@
       <div class="footer-top">
         <h4>Website</h4>
         <p class="mt-1">
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="https://www.covid19.go.id" target="_blank">https://www.covid19.go.id</a> <br>
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="http://covid19.bnpb.go.id" target="_blank">http://covid19.bnpb.go.id</a> <br>
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="https://covid19.kemkes.go.id" target="_blank">https://covid19.kemkes.go.id</a> <br>
         </p>
 
         <h4 class="mt-3">Telepon</h4>
         <p class="mt-1">
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="tel://119" target="_blank">119 ext 9 (covid19.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="tel://622129827444" target="_blank">+6221-29827444 (covid19.bnpb.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="tel://628121237575" target="_blank">+62812-1237-575 (covid19.bnpb.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="tel://62215210411" target="_blank">021-5210-411 (covid19.kemkes.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="tel://6281212123119" target="_blank">0812-1212-3119 (covid19.kemkes.go.id)</a> <br>
         </p>
         <h4 class="mt-3">Email</h4>
         <p class="mt-1">
-          <i class="fa fa-envelope-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="mailto:pusdalops@bnpb.go.id" target="_blank">pusdalops@bnpb.go.id</a> <br>
-          <i class="fa fa-envelope-square fa-lg" aria-hidden="true" style="color:#3399ff;"></i> &nbsp;
+          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
           <a href="mailto:contact@bnpb.go.id" target="_blank">contact@bnpb.go.id</a> <br>
         </p>
       </div>
@@ -471,55 +471,6 @@
         // console.log(data.countrydata[0]);
       }
     });
-
-    // data provonsi indonesia
-    // $.ajax({
-    //   url: 'https://api.kawalcorona.com/indonesia/provinsi',
-    //   dataType: 'json',
-    //   type: 'GET',
-    //   accept: 'application/json',
-    //   success: function(data) {
-    //     console.log(data);
-    //   }
-    // });
-
-    var data_person = [{
-        id: 1,
-        firstname: "Gandalf",
-        lastname: "Greyhaem",
-        email: "Greyhaem@test.com",
-        twitter: "@Greyhaem"
-      },
-      {
-        id: 2,
-        firstname: "Bilbo",
-        lastname: "Baggins",
-        email: "Bilbo@test.com",
-        twitter: "@Baggins"
-      },
-      {
-        id: 3,
-        firstname: "Frodo",
-        lastname: "Baggins",
-        email: "Frodo@test.com",
-        twitter: "@Frodo"
-      }
-    ];
-
-    $.getJSON("js/data.json", function(data_provinsi) {
-      // console.log(data_provinsi);
-      var no = 1;
-      $('#data_table').empty();
-      $.each(data_provinsi, function() {
-        $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' + this.attributes.Provinsi + '</td><td>' + this.attributes.Kasus_Posi + '</td><td>' + this.attributes.Kasus_Semb + '</td><td>' + this.attributes
-          .Kasus_Meni + '</td></tr>');
-      });
-    });
-
-    // $('#data_table').empty();
-    // $.each(data_person, function() {
-    //   $('#data_table').append('<tr><td class="text-center">'+this.id+'</td><td>'+this.firstname+'</td><td>'+this.lastname+'</td><td>'+this.email+'</td><td>'+this.twitter+'</td></tr>');
-    // });
 
   });
 </script>

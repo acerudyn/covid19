@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Covid-19</title>
+  <title>Live Data Monitoring Covid-19</title>
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Nanny Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <meta name="keywords" content="Coronavirus, covi-19, covi19, Virus,
+         API Corona Virus, Update CoronaVirus, Data CoronaVirus Global,
+         Data CoronaVirus Indonesia, Udate corono indonesia, coronavirus terkini" />
   <script>
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -23,6 +24,7 @@
   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
   <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/virus.png">
 
 </head>
 
@@ -45,27 +47,17 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#global">Global</a>
+            <a href="index.html#global">Global</a>
           </li>
           <li>
-            <a href="#indonesia">Indonesia</a>
+            <a href="index.html#indonesia">Indonesia</a>
           </li>
           <li>
-            <a href="provinsi.html" class="belum">Provinsi</a>
+            <a href="provinsi.html">Provinsi</a>
           </li>
           <li>
-            <a href="#">Informasi
-              <span class="fa fa-angle-down" aria-hidden="true"></span>
-            </a>
-            <input type="checkbox" id="drop-2">
-            <ul>
-              <li>
-                <a href="#pencegahan" class="drop-text">Pencegahan</a>
-              </li>
-              <li>
-                <a href="#contact" class="drop-text">Hotline</a>
-              </li>
-            </ul>
+            <a href="#pencegahan">Pencegahan</a>
+          </li>
         </ul>
       </nav>
       <!-- //nav -->
@@ -78,7 +70,9 @@
       <h3 class="title text-center mb-2" style="color:#ffffff;">Monitoring Virus Corona</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
         <p style="color:#f8a640;">Selamat datang di website monitoring virus corona, data yang disajikan disini akan terus terupdate
-          secara realtime yang bersumber dari <br> <span id="source"></span> </p>
+          secara realtime yang bersumber dari <br>
+          <a href="https://thevirustracker.com/" target="_blank">https://thevirustracker.com/</a>
+         </p>
       </div>
       <!-- </div> -->
     </div>
@@ -87,12 +81,12 @@
   <!--//banner -->
 
   <!-- service -->
-  <section class="about py-lg-4 py-md-3 py-sm-3 py-3">
+  <section class="service py-lg-4 py-md-3 py-sm-3 py-3">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-      <h3 class="title text-center mb-2">What We Do For Babies</h3>
+      <h3 class="title text-center mb-2">Data Provinsi</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum
-        </p>
+        <p>Berikut ini tabel penyebaran virus corona per provinsi di seluruh Indonesia</p>
+        <p class="updated"></p>
       </div>
       <div class="row">
 
@@ -116,68 +110,161 @@
   </section>
   <!--//service -->
 
-  <!-- contact -->
-  <section class="contact py-lg-4 py-md-3 py-sm-3 py-3" id="contact">
+  <!-- service -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="pencegahan">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-      <h3 class="title text-center mb-2">Get In Touch With us</h3>
+      <h3 class="title text-center mb-2">Langkah Pencegahan</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum
-        </p>
+        <p>Beberapa langkah dan tindakan untuk mencegah tertularnya virus corona
+          dan membantu untuk meminimalisir penyebaran virus corona</p>
       </div>
       <div class="row">
-        <div class="col-lg-7 ">
-          <form action="#" method="post">
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-                <input type="text" class="form-control" placeholder="First Name" required="">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-shield" aria-hidden="true"></span>
+                </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-                <input type="text" class="form-control" placeholder="Last Name" required="">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-                <input type="email" class="form-control" placeholder="Email" required="">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-                <input type="text" class="form-control" placeholder="Phone" required="">
-              </div>
-            </div>
-            <div class=" form-group contact-forms">
-              <textarea class="form-control" placeholder="Meassage" required=""></textarea>
-            </div>
-            <button type="submit" class="btn sent-butnn btn-lg">Send</button>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
 
-          </form>
+                <h4>Menjaga Kebersihan</h4>
+                <p class="mt-2">Selalu mencuci tangan atau memakai hand sanitizer setelah bepergian dari luar rumah</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--//map -->
-        <div class="col-lg-5 address_mail_footer_grids">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-child" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
+
+                <h4>Menjaga Kesehatan</h4>
+                <p class="mt-2">Makan makanan bergizi dan istirahat yang cukup untuk menjaga badan tetap fit</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- map -->
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-male" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
+
+                <h4>Social Distancing</h4>
+                <p class="mt-2">Hindari kerumunan dan selalu jaga jarak dengan orang lain saat berada di luar rumah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-home" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
+
+                <h4>Tetap di <br> dalam rumah</h4>
+                <p class="mt-2">Tetap berada di dlam rumah, jangan keluar rumah jika tidak ada keperluan mendesak.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-smile-o" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
+
+                <h4>Jangan Bersikap Panik</h4>
+                <p class="mt-2">Tetap tenang jangan panik karena akan mengganggu psikis dan daya tahan tubuh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="service-grid-wthree ">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2 service-jst-icon">
+                <div class="service-icon text-center ">
+                  <span class="fa fa-laptop" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
+
+                <h4>Work From Home</h4>
+                <p class="mt-2">Jika memungkinkan bekerjalah dari rumah untuk menghindari penularan virus di luar rumah</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- contact -->
+  <!--//service -->
+
+  <h3 class="title text-center mb-2">Layanan Informasi</h3>
+  <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+    <p>Beberapa layanan informasi resmi dari pemerintah untuk memberi akses informasi yang akurat
+      bagi masyarakat</p>
+  </div>
+
   <!-- contact-address -->
   <section class="contact-two py-lg-4 py-md-3 py-sm-3 py-3">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-      <div class="footer-top text-center ">
-        <h4>Address</h4>
+      <div class="footer-top">
+        <h4>Website</h4>
         <p class="mt-1">
-          Melbourne St,South
-          <br>Birbane 4101 Austraila.</p>
-        <h4 class="mt-3">Phone</h4>
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="https://www.covid19.go.id" target="_blank">https://www.covid19.go.id</a> <br>
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="http://covid19.bnpb.go.id" target="_blank">http://covid19.bnpb.go.id</a> <br>
+          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="https://covid19.kemkes.go.id" target="_blank">https://covid19.kemkes.go.id</a> <br>
+        </p>
+
+        <h4 class="mt-3">Telepon</h4>
         <p class="mt-1">
-          111+ 1255600</p>
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="tel://119" target="_blank">119 ext 9 (covid19.go.id)</a> <br>
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="tel://622129827444" target="_blank">+6221-29827444 (covid19.bnpb.go.id)</a> <br>
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="tel://628121237575" target="_blank">+62812-1237-575 (covid19.bnpb.go.id)</a> <br>
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="tel://62215210411" target="_blank">021-5210-411 (covid19.kemkes.go.id)</a> <br>
+          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="tel://6281212123119" target="_blank">0812-1212-3119 (covid19.kemkes.go.id)</a> <br>
+        </p>
         <h4 class="mt-3">Email</h4>
         <p class="mt-1">
-          <a href="mailto:info@example.com">info@example1.com</a>
+          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="mailto:pusdalops@bnpb.go.id" target="_blank">pusdalops@bnpb.go.id</a> <br>
+          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
+          <a href="mailto:contact@bnpb.go.id" target="_blank">contact@bnpb.go.id</a> <br>
         </p>
       </div>
     </div>
   </section>
-
   <!--//contact-address -->
+
   <!-- footer -->
   <section class="py-lg-4 py-md-3 py-sm-3 py-3 footer-style">
 
@@ -196,8 +283,8 @@
   <footer>
     <div class="bottom-footer text-center py-md-4 py-3">
       <p>
-        © 2019 Nanny. All Rights Reserved | Design by
-        <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+        © 2020 Made with <i class="fa fa-heart fa-lg" aria-hidden="true" style="color:#f207a8;"></i> by <a href="http://s.id/see_udin" target="_blank">see_udin</a> <br>
+        Develop from home - Dedicated to Indonesia
       </p>
     </div>
   </footer>
@@ -216,62 +303,8 @@
     var time = moment().format('DD-MMM-YYYY H:mm:ss');
     $('.updated').html('Update Terakhir : ' + time);
 
-    // data global
-    $.ajax({
-      url: 'https://thevirustracker.com/free-api?global=stats',
-      dataType: 'json',
-      success: function(data) {
-        var status = data.stat;
-        var total_kasus = numeral(data.results[0].total_cases).format('0,0');
-        var total_sembuh = numeral(data.results[0].total_recovered).format('0,0');
-        var total_meninggal = numeral(data.results[0].total_deaths).format('0,0');
-        var total_kasus_baru_hari_ini = numeral(data.results[0].total_new_cases_today).format('0,0');
-        var total_kasus_meninggal_hari_ini = numeral(data.results[0].total_new_deaths_today).format('0,0');
-        var total_kasus_aktif = numeral(data.results[0].total_active_cases).format('0,0');
-        var sumber = data.results[0].source.url;
-
-        var number = numeral(total_kasus);
-        var string = number.format('0,0'); // '1,000'
-
-        if (status = 'ok') {
-          // swal('Success', 'Test Connected', 'success');
-          $('#total_cases').html(total_kasus);
-          $('#total_active_cases').html(total_kasus_aktif);
-          $('#total_recovered').html(total_sembuh);
-          $('#total_deaths').html(total_meninggal);
-          $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
-          $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
-          $('#source').html('<a href="' + sumber + '" target="_blank">' + sumber + '</a>');
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        // console.log(data.results[0].total_cases);
-        // console.log(data);
-      }
-    });
-
-    // data indonesia
-    $.ajax({
-      url: 'https://thevirustracker.com/free-api?countryTotal=ID',
-      dataType: 'json',
-      success: function(data) {
-        var id_status = data.stat;
-        var id_total_kasus = numeral(data.countrydata[0].total_cases).format('0,0');
-        var id_total_sembuh = numeral(data.countrydata[0].total_recovered).format('0,0');
-        var id_total_meninggal = numeral(data.countrydata[0].total_deaths).format('0,0');
-        var id_total_kasus_aktif = numeral(data.countrydata[0].total_active_cases).format('0,0');
-
-        if (id_status = 'ok') {
-          $('#id_total_cases').html(id_total_kasus);
-          $('#id_total_active_cases').html(id_total_kasus_aktif);
-          $('#id_total_recovered').html(id_total_sembuh);
-          $('#id_total_deaths').html(id_total_meninggal);
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        // console.log(data.results[0].total_cases);
-        // console.log(data.countrydata[0]);
-      }
+    $(".belum").click(function() {
+      swal("Information", "Maaf, masih under development", "warning");
     });
 
     // data provonsi indonesia
@@ -285,36 +318,36 @@
     //   }
     // });
 
-    var data_person = [
-        {
-            id: 1,
-            firstname: "Gandalf",
-            lastname: "Greyhaem",
-            email: "Greyhaem@test.com",
-            twitter: "@Greyhaem"
-        },
-        {
-            id: 2,
-            firstname: "Bilbo",
-            lastname: "Baggins",
-            email: "Bilbo@test.com",
-            twitter: "@Baggins"
-        },
-        {
-            id: 3,
-            firstname: "Frodo",
-            lastname: "Baggins",
-            email: "Frodo@test.com",
-            twitter: "@Frodo"
-        }
+    var data_person = [{
+        id: 1,
+        firstname: "Gandalf",
+        lastname: "Greyhaem",
+        email: "Greyhaem@test.com",
+        twitter: "@Greyhaem"
+      },
+      {
+        id: 2,
+        firstname: "Bilbo",
+        lastname: "Baggins",
+        email: "Bilbo@test.com",
+        twitter: "@Baggins"
+      },
+      {
+        id: 3,
+        firstname: "Frodo",
+        lastname: "Baggins",
+        email: "Frodo@test.com",
+        twitter: "@Frodo"
+      }
     ];
 
-    $.getJSON( "js/data.json", function(data_provinsi) {
+    $.getJSON("js/data.json", function(data_provinsi) {
       // console.log(data_provinsi);
       var no = 1;
       $('#data_table').empty();
       $.each(data_provinsi, function() {
-        $('#data_table').append('<tr><td class="text-center">'+ no++ +'</td><td>'+this.attributes.Provinsi+'</td><td>'+this.attributes.Kasus_Posi+'</td><td>'+this.attributes.Kasus_Semb+'</td><td>'+this.attributes.Kasus_Meni+'</td></tr>');
+        $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' + this.attributes.Provinsi + '</td><td>' + this.attributes.Kasus_Posi + '</td><td>' + this.attributes.Kasus_Semb + '</td><td>' + this.attributes
+          .Kasus_Meni + '</td></tr>');
       });
     });
 
