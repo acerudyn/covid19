@@ -7,8 +7,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Coronavirus, covi-19, covi19, Virus,
-         API Corona Virus, Update CoronaVirus, Data CoronaVirus Global,
-         Data CoronaVirus Indonesia, Udate corono indonesia, coronavirus terkini" />
+   API Corona Virus, Update CoronaVirus, Data CoronaVirus Global,
+   Data CoronaVirus Indonesia, Udate corono indonesia, coronavirus terkini" />
+
   <script>
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -28,7 +29,7 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false;"> <!-- disbale right click -->
   <div class="main-top" id="home">
     <!-- header -->
     <div class="headder-top">
@@ -235,7 +236,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Menjaga Kebersihan</h4>
                 <p class="mt-2">Selalu mencuci tangan atau memakai hand sanitizer setelah bepergian dari luar rumah</p>
               </div>
@@ -251,7 +251,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Menjaga Kesehatan</h4>
                 <p class="mt-2">Makan makanan bergizi dan istirahat yang cukup untuk menjaga badan tetap fit</p>
               </div>
@@ -267,7 +266,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Social Distancing</h4>
                 <p class="mt-2">Hindari kerumunan dan selalu jaga jarak dengan orang lain saat berada di luar rumah</p>
               </div>
@@ -283,7 +281,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Tetap di <br> dalam rumah</h4>
                 <p class="mt-2">Tetap berada di dlam rumah, jangan keluar rumah jika tidak ada keperluan mendesak.</p>
               </div>
@@ -299,7 +296,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Jangan Bersikap Panik</h4>
                 <p class="mt-2">Tetap tenang jangan panik karena akan mengganggu psikis dan daya tahan tubuh</p>
               </div>
@@ -315,7 +311,6 @@
                 </div>
               </div>
               <div class="ser-sevice-grid col-lg-9 col-md-9 col-sm-10">
-
                 <h4>Work From Home</h4>
                 <p class="mt-2">Jika memungkinkan bekerjalah dari rumah untuk menghindari penularan virus di luar rumah</p>
               </div>
@@ -374,18 +369,40 @@
 
   <!-- footer -->
   <section class="py-lg-4 py-md-3 py-sm-3 py-3 footer-style">
-
-    <div class="social-icons text-center">
-      <!-- move icon -->
-      <div class="text-center">
-        <a href="#home" class="move-top text-center">
-          <span class="fa fa-chevron-circle-up" aria-hidden="true"></span>
-        </a>
-      </div>
-      <!--//move icon -->
+    <div class="social-icons mt-lg-5 mt-md-4 mt-3 text-center">
+      <ul>
+        <li>
+          <a href="https://facebook.com/seeudindotcom/" target="_blank">
+            <span class="fa fa-facebook-square f1"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/see_udin/" target="_blank">
+            <span class="fa fa-instagram f5"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/akhirudin-muhamad-a56b5b126" target="_blank">
+            <span class="fa fa-linkedin-square f2"></span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:acerudyn@yahoo.com" target="_blank">
+            <span class="fa fa-envelope-square f3"></span>
+          </a>
+        </li>
+      </ul>
     </div>
+    <!-- move icon -->
+    <div class="text-center">
+      <a href="#home" class="move-top text-center mt-lg-5 mt-md-4 mt-3">
+        <span class="fa fa-chevron-circle-up" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!--//move icon -->
   </section>
   <!--//footer -->
+
   <!-- copy right -->
   <footer>
     <div class="bottom-footer text-center py-md-4 py-3">
@@ -398,14 +415,29 @@
   <!-- copy right -->
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script> <!-- http://numeraljs.com/ -->
 <script src="js/momentjs.js"></script> <!-- https://momentjs.com/ -->
 
 <script type="text/javascript">
   $(document).ready(function() {
+
+    /* disable Right Click F12 Ctrl + Shift + I Ctrl + Shift + J Ctrl + U */
+    document.onkeydown = function(e) {
+      if(event.keyCode == 123) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+      }
+    }
 
     var time = moment().format('DD-MMM-YYYY H:mm:ss');
     $('.updated').html('Update Terakhir : ' + time);
