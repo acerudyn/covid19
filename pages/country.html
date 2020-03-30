@@ -58,6 +58,9 @@
             <a href="provinsi.html">Provinsi</a>
           </li>
           <li>
+            <a href="country.html">Negara</a>
+          </li>
+          <li>
             <a href="#pencegahan">Pencegahan</a>
           </li>
         </ul>
@@ -346,35 +349,54 @@
       swal("Information", "Maaf, masih under development", "warning");
     });
 
-$('#table_1').DataTable();
+  $('#table_1').DataTable();
 
-    // data global country
+  // data global country from kawalcorona.com
     $.ajax({
-      url: 'https://thevirustracker.com/free-api?countryTotals=ALL',
+      url: 'https://api.kawalcorona.com/',
       dataType: 'json',
-      success: function(data_country) {
-        var status = data_country.countryitems.stat;
-
-        if (status = 'ok') {
-          // swal('Success', 'Test Connected', 'success');
-          var no = 1;
-          var nmr = 1;
-          $('#data_table').empty();
-          $('#loading').css('display', 'none');
-          $.each(data_country.countryitems[0], function() {
-            var num = no++;
-            $('#data_table').append('<tr><td class="text-center">' + nmr++ + '</td><td>' +
-              data_country.countryitems[0][num].title + '</td><td>' + data_country.countryitems[0][num].total_cases + '</td><td>' +
-              data_country.countryitems[0][num].total_recovered + '</td><td>' + data_country.countryitems[0][num].total_deaths + '</td></tr>');
-          });
-
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        // console.log(data.results[0].total_cases);
+      type: 'GET',
+      accept: 'application/json',
+      success: function(data) {
         // console.log(data);
+        var no = 1;
+        $('#data_table').empty();
+        $.each(data, function() {
+          $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
+            this.attributes.Country_Region + '</td><td>' + this.attributes.Confirmed + '</td><td>' +
+            this.attributes.Recovered + '</td><td>' + this.attributes.Deaths + '</td></tr>');
+        });
+        $('#loading').css('display', 'none');
       }
     });
+
+    // data global country from thevirustracker.com
+    // $.ajax({
+    //   url: 'https://thevirustracker.com/free-api?countryTotals=ALL',
+    //   dataType: 'json',
+    //   success: function(data_country) {
+    //     var status = data_country.countryitems.stat;
+    //
+    //     if (status = 'ok') {
+    //       // swal('Success', 'Test Connected', 'success');
+    //       var no = 1;
+    //       var nmr = 1;
+    //       $('#data_table').empty();
+    //       $('#loading').css('display', 'none');
+    //       $.each(data_country.countryitems[0], function() {
+    //         var num = no++;
+    //         $('#data_table').append('<tr><td class="text-center">' + nmr++ + '</td><td>' +
+    //           data_country.countryitems[0][num].title + '</td><td>' + data_country.countryitems[0][num].total_cases + '</td><td>' +
+    //           data_country.countryitems[0][num].total_recovered + '</td><td>' + data_country.countryitems[0][num].total_deaths + '</td></tr>');
+    //       });
+    //
+    //     } else {
+    //       swal('Error', 'Server API Error', 'error');
+    //     }
+    //     // console.log(data.results[0].total_cases);
+    //     // console.log(data);
+    //   }
+    // });
 
 
   });
