@@ -382,8 +382,9 @@
       var no = 1;
       $('#data_table').empty();
       $.each(data_provinsi, function() {
-        $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' + this.attributes.Provinsi + '</td><td>' + this.attributes.Kasus_Posi + '</td><td>' + this.attributes.Kasus_Semb + '</td><td>' + this.attributes
-          .Kasus_Meni + '</td></tr>');
+        $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
+        this.attributes.Provinsi + '</td><td>' + numeral(this.attributes.Kasus_Posi).format('0,0') + '</td><td>' +
+        numeral(this.attributes.Kasus_Semb).format('0,0') + '</td><td>' + numeral(this.attributes.Kasus_Meni).format('0,0') + '</td></tr>');
       });
     });
 

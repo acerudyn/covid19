@@ -113,6 +113,7 @@
             <!-- space for data from ajax -->
           </tbody>
         </table>
+        <p>sumber dari : <a href="https://kawalcorona.com/" target="_blank">https://kawalcorona.com/</a> </p>
 
       </div>
     </div>
@@ -363,8 +364,8 @@
         $('#data_table').empty();
         $.each(data, function() {
           $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
-            this.attributes.Country_Region + '</td><td>' + this.attributes.Confirmed + '</td><td>' +
-            this.attributes.Recovered + '</td><td>' + this.attributes.Deaths + '</td></tr>');
+            this.attributes.Country_Region + '</td><td>' + numeral(this.attributes.Confirmed).format('0,0') + '</td><td>' +
+            numeral(this.attributes.Recovered).format('0,0') + '</td><td>' + numeral(this.attributes.Deaths).format('0,0') + '</td></tr>');
         });
         $('#loading').css('display', 'none');
       }
