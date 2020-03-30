@@ -1479,7 +1479,15 @@ footer {
 }
 
 .fa-lg {
-  color:#3399ff;
+  color: #3399ff;
+}
+
+.loading-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  z-index: 1;
 }
 
 /*--//responsive--*/

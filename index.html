@@ -29,11 +29,7 @@
 
 </head>
 
-<body oncontextmenu="return false;">  <!-- disbale right click -->
-
-  <!-- <div id="myDiv">
-    <img id="loading-image" src="images/loading.gif" width="75" height="75" style="position: absolute;top: 50%;left: 50%; z-index: 1;"/>
-  </div> -->
+<body >  <!-- disbale right click oncontextmenu="return false;"-->
 
   <div class="main-top" id="home">
     <!-- header -->
@@ -79,6 +75,10 @@
           secara realtime yang bersumber dari <br> <span id="source"></span> </p>
       </div>
       <!-- </div> -->
+    </div>
+
+    <div id="loading">
+      <img src="images/loading.gif" width="75" height="75" class="loading-img"/>
     </div>
 
   </div>
@@ -506,24 +506,9 @@
         }
         // console.log(data.results[0].total_cases);
         // console.log(data.countrydata[0]);
+        $('#loading').css('display', 'none');
       }
     });
-
-//     function loadingAjax(div_id) {
-//       var divIdHtml = $("#"+div_id).html();
-//       $.ajax({
-//            type: "POST",
-//            url: "script.php",
-//            data: "name=John&id=28",
-//            beforeSend: function() {
-//               $("#loading-image").show();
-//            },
-//            success: function(msg) {
-//               $("#"+div_id).html(divIdHtml + msg);
-//               $("#loading-image").hide();
-//            }
-//       });
-// }
 
   });
 </script>
