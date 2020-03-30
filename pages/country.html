@@ -26,11 +26,11 @@
   <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
   <link rel="icon" type="image/png" href="../images/virus.png">
+  <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel='stylesheet' type='text/css' media="all">
 
 </head>
 
-<body>
-  <!-- disbale right click oncontextmenu="return false;" -->
+<body oncontextmenu="return false;"> <!-- disbale right click -->
   <div class="main-top" id="home">
     <!-- header -->
     <div class="headder-top">
@@ -79,6 +79,10 @@
       <!-- </div> -->
     </div>
 
+    <div id="loading">
+      <img src="../images/loading.gif" width="75" height="75" class="loading-img"/>
+    </div>
+
   </div>
   <!--//banner -->
 
@@ -92,7 +96,7 @@
       </div>
       <div class="row">
 
-        <table class="table table-striped table-bordered table-responsive-sm">
+        <table id="" class="table table-striped table-bordered table-responsive-sm">
           <thead>
             <tr>
               <th scope="col" width="5%" class="text-center">NO</th>
@@ -106,7 +110,6 @@
             <!-- space for data from ajax -->
           </tbody>
         </table>
-        <p>sumber dari : <a href="https://kawalcorona.com/" target="_blank">https://kawalcorona.com/</a> </p>
 
       </div>
     </div>
@@ -314,6 +317,8 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script> <!-- http://numeraljs.com/ -->
 <script src="../js/momentjs.js"></script> <!-- https://momentjs.com/ -->
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -341,6 +346,8 @@
       swal("Information", "Maaf, masih under development", "warning");
     });
 
+$('#table_1').DataTable();
+
     // data global country
     $.ajax({
       url: 'https://thevirustracker.com/free-api?countryTotals=ALL',
@@ -353,6 +360,7 @@
           var no = 1;
           var nmr = 1;
           $('#data_table').empty();
+          $('#loading').css('display', 'none');
           $.each(data_country.countryitems[0], function() {
             var num = no++;
             $('#data_table').append('<tr><td class="text-center">' + nmr++ + '</td><td>' +
