@@ -20,22 +20,22 @@
     }
   </script>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel='stylesheet' type='text/css' media="all">
   <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/virus.png">
+  <link rel="icon" type="image/png" href="../images/virus.png">
 
 </head>
 
-<body > <!-- disbale right click oncontextmenu="return false;"-->
+<body oncontextmenu="return false;"> <!-- disbale right click -->
   <div class="main-top" id="home">
     <!-- header -->
     <div class="headder-top">
       <div id="logo">
         <h1>
-          <a href="index.html">COVID-19</a>
+          <a href="../index.html">COVID-19</a>
         </h1>
       </div>
       <!-- nav -->
@@ -45,13 +45,13 @@
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
           <li class="active">
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="index.html#global">Global</a>
+            <a href="../index.html#global">Global</a>
           </li>
           <li>
-            <a href="index.html#indonesia">Indonesia</a>
+            <a href="../index.html#indonesia">Indonesia</a>
           </li>
           <li>
             <a href="provinsi.html">Provinsi</a>
@@ -312,7 +312,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script> <!-- http://numeraljs.com/ -->
-<script src="js/momentjs.js"></script> <!-- https://momentjs.com/ -->
+<script src="../js/momentjs.js"></script> <!-- https://momentjs.com/ -->
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -341,15 +341,15 @@
     });
 
     // data provonsi indonesia
-    $.ajax({
-      url: 'https://api.kawalcorona.com/indonesia/provinsi',
-      dataType: 'json',
-      type: 'GET',
-      accept: 'application/json',
-      success: function(data) {
-        console.log(data);
-      }
-    });
+    // $.ajax({
+    //   url: 'https://api.kawalcorona.com/indonesia/provinsi',
+    //   dataType: 'json',
+    //   type: 'GET',
+    //   accept: 'application/json',
+    //   success: function(data) {
+    //     console.log(data);
+    //   }
+    // });
 
     var data_person = [{
         id: 1,
@@ -374,7 +374,7 @@
       }
     ];
 
-    $.getJSON("js/data.json", function(data_provinsi) {
+    $.getJSON("../js/data.json", function(data_provinsi) {
       // console.log(data_provinsi);
       var no = 1;
       $('#data_table').empty();
