@@ -29,7 +29,7 @@
 
 </head>
 
-<body oncontextmenu="return false;"> <!-- disbale right click -->
+<body > <!-- disbale right click oncontextmenu="return false;"-->
   <div class="main-top" id="home">
     <!-- header -->
     <div class="headder-top">
@@ -341,15 +341,15 @@
     });
 
     // data provonsi indonesia
-    // $.ajax({
-    //   url: 'https://api.kawalcorona.com/indonesia/provinsi',
-    //   dataType: 'json',
-    //   type: 'GET',
-    //   accept: 'application/json',
-    //   success: function(data) {
-    //     console.log(data);
-    //   }
-    // });
+    $.ajax({
+      url: 'https://api.kawalcorona.com/indonesia/provinsi',
+      dataType: 'json',
+      type: 'GET',
+      accept: 'application/json',
+      success: function(data) {
+        console.log(data);
+      }
+    });
 
     var data_person = [{
         id: 1,
