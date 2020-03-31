@@ -20,23 +20,22 @@
     }
   </script>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel='stylesheet' type='text/css' media="all">
   <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/virus.png">
+  <link rel="icon" type="image/png" href="../images/virus.png">
 
 </head>
 
-<body oncontextmenu="return false;">  <!-- disbale right click -->
-
-  <div class="main-top" id="home">
+<body oncontextmenu="return false;"><!-- disbale right click -->
+  <div id="home">
     <!-- header -->
     <div class="headder-top">
       <div id="logo">
         <h1>
-          <a href="index.html">COVID-19</a>
+          <a href="../index.html">COVID-19</a>
         </h1>
       </div>
       <!-- nav -->
@@ -46,16 +45,16 @@
         <input type="checkbox" id="drop">
         <ul class="menu mt-2">
           <li class="active">
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="pages/global.html">Global</a>
+            <a href="global.html">Global</a>
           </li>
           <li>
-            <a href="pages/indonesia.html">Indonesia</a>
+            <a href="indonesia.html">Indonesia</a>
           </li>
           <li>
-            <a href="pages/hotline.html">hotline</a>
+            <a href="hotline.html">hotline</a>
           </li>
           <li>
             <a href="#pencegahan">Pencegahan</a>
@@ -66,118 +65,24 @@
     </div>
     <!-- //header -->
 
-    <!-- banner -->
-    <div class="slider-img">
-      <!-- <div class="container-fluid"> -->
-      <h3 class="title text-center mb-2" style="color:#ffffff;">Monitoring Virus Corona</h3>
-      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-        <p style="color:#f8a640;">Selamat datang di website monitoring virus corona, data yang disajikan disini akan terus terupdate
-          secara realtime yang bersumber dari <br> <span id="source"></span> </p>
-      </div>
-      <!-- </div> -->
-    </div>
-
-    <div id="loading">
-      <img src="images/loading.gif" width="75" height="75" class="loading-img"/>
-    </div>
-
   </div>
   <!--//banner -->
 
-  <!-- about -->
-  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="global">
-    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-      <h3 class="title text-center mb-2">Data Global</h3>
-      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-        <p class="updated"></p>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sick.png" alt="sick" width="75" height="75"></span>
-            </div>
-            <h5>Total Kasus</h5>
-            <p class="mt-2">
-              <h4 id="total_cases"></h4>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sad2.png" alt="sad" width="75" height="75"></span>
-            </div>
-            <h5>Total Kasus Aktif</h5>
-            <p class="mt-2">
-              <h4 id="total_active_cases"></h4>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/happy.png" alt="happy" width="75" height="75"></span>
-            </div>
-            <h5>Total Sembuh</h5>
-            <p class="mt-2">
-              <h4 id="total_recovered"></h4>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/cry.png" alt="cry" width="75" height="75"></span>
-            </div>
-            <h5>Total Meninggal</h5>
-            <p class="mt-2">
-              <h4 id="total_deaths"></h4>
-            </p>
-          </div>
-        </div>
-        <!--
-        <div class="col-lg-4 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sad.png" alt="sad" width="75" height="75"></span>
-            </div>
-            <h5>Kasus Baru Hari Ini</h5>
-            <p class="mt-2">
-              <h4 id="total_new_cases_today"></h4>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 text-center about-two-side my-3">
-          <div class="about-wthree-grids ">
-            <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sad.png" alt="sad" width="75" height="75"></span>
-            </div>
-            <h5>Kasus Meninggal Hari Ini</h5>
-            <p class="mt-2">
-              <h4 id="total_new_deaths_today"></h4>
-            </p>
-          </div>
-        </div>
-      </div>
-    -->
-
-      </div>
-  </section>
-  <!--//about -->
-
   <!-- service -->
   <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="indonesia">
-    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3 mt-5 pt-5">
       <h3 class="title text-center mb-2">Data Indonesia</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
         <p class="updated"></p>
+      </div>
+      <div id="loading">
+        <img src="../images/loading.gif" width="75" height="75" class="loading-img"/>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
           <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sick.png" alt="sick" width="75" height="75"></span>
+              <span><img src="../images/sick.png" alt="sick" width="75" height="75"></span>
             </div>
             <h5>Terkonfirmasi</h5>
             <p class="mt-2">
@@ -188,7 +93,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
           <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/sad2.png" alt="sad" width="75" height="75"></span>
+              <span><img src="../images/sad2.png" alt="sad" width="75" height="75"></span>
             </div>
             <h5>Dalam Perawatan</h5>
             <p class="mt-2">
@@ -199,7 +104,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
           <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/happy.png" alt="happy" width="75" height="75"></span>
+              <span><img src="../images/happy.png" alt="happy" width="75" height="75"></span>
             </div>
             <h5>Total Sembuh</h5>
             <p class="mt-2">
@@ -210,7 +115,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6 text-center about-two-side my-3">
           <div class="service-grid-wthree ">
             <div class="about-icon text-center color-one mb-lg-4 mb-md-3 mb-3">
-              <span><img src="images/cry.png" alt="cry" width="75" height="75"></span>
+              <span><img src="../images/cry.png" alt="cry" width="75" height="75"></span>
             </div>
             <h5>Total Meninggal</h5>
             <p class="mt-2">
@@ -224,7 +129,38 @@
   <!--//service -->
 
   <!-- service -->
-  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="pencegahan">
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title text-center mb-2">Data Provinsi</h3>
+      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+        <p>Berikut ini tabel penyebaran virus corona berdasarkan provinsi di seluruh Indonesia</p>
+        <p class="updated"></p>
+      </div>
+      <div class="row">
+
+        <table class="table table-striped table-bordered table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col" width="5%" class="text-center">NO</th>
+              <th scope="col">PROVINSI</th>
+              <th scope="col" width="15%">POSITIF</th>
+              <th scope="col" width="15%">SEMBUH</th>
+              <th scope="col" width="15%">MENINGGAL</th>
+            </tr>
+          </thead>
+          <tbody id="data_table">
+            <!-- space for data from ajax -->
+          </tbody>
+        </table>
+        <p>sumber dari : <a href="https://kawalcorona.com/" target="_blank">https://kawalcorona.com/</a> </p>
+
+      </div>
+    </div>
+  </section>
+  <!--//service -->
+
+  <!-- service -->
+  <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="pencegahan">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
       <h3 class="title text-center mb-2">Langkah Pencegahan</h3>
       <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
@@ -327,52 +263,6 @@
   </section>
   <!--//service -->
 
-  <h3 class="title text-center mb-2">Layanan Informasi</h3>
-  <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-    <p>Beberapa layanan informasi resmi dari pemerintah untuk memberi akses informasi yang akurat
-      bagi masyarakat</p>
-  </div>
-
-  <!-- contact-address -->
-  <section class="contact-two py-lg-4 py-md-3 py-sm-3 py-3">
-    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-      <div class="footer-top">
-        <h4>Website</h4>
-        <p class="mt-1">
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="https://www.covid19.go.id" target="_blank">https://www.covid19.go.id</a> <br>
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="http://covid19.bnpb.go.id" target="_blank">http://covid19.bnpb.go.id</a> <br>
-          <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="https://covid19.kemkes.go.id" target="_blank">https://covid19.kemkes.go.id</a> <br>
-        </p>
-
-        <!-- <h4 class="mt-3">Telepon</h4>
-        <p class="mt-1">
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="tel://119" target="_blank">119 ext 9 (covid19.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="tel://622129827444" target="_blank">+6221-29827444 (covid19.bnpb.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="tel://628121237575" target="_blank">+62812-1237-575 (covid19.bnpb.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="tel://62215210411" target="_blank">021-5210-411 (covid19.kemkes.go.id)</a> <br>
-          <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="tel://6281212123119" target="_blank">0812-1212-3119 (covid19.kemkes.go.id)</a> <br>
-        </p> -->
-
-        <h4 class="mt-3">Email</h4>
-        <p class="mt-1">
-          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="mailto:pusdalops@bnpb.go.id" target="_blank">pusdalops@bnpb.go.id</a> <br>
-          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> &nbsp;
-          <a href="mailto:contact@bnpb.go.id" target="_blank">contact@bnpb.go.id</a> <br>
-        </p>
-      </div>
-    </div>
-  </section>
-  <!--//contact-address -->
-
   <!-- footer -->
   <section class="py-lg-4 py-md-3 py-sm-3 py-3 footer-style">
     <div class="social-icons mt-lg-5 mt-md-4 mt-3 text-center">
@@ -424,7 +314,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script> <!-- http://numeraljs.com/ -->
-<script src="js/momentjs.js"></script> <!-- https://momentjs.com/ -->
+<script src="../js/momentjs.js"></script> <!-- https://momentjs.com/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script> <!-- PapaParse -->
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -452,39 +343,16 @@
       swal("Information", "Maaf, masih under development", "warning");
     });
 
-    // data global
-    $.ajax({
-      url: 'https://thevirustracker.com/free-api?global=stats',
-      dataType: 'json',
-      success: function(data) {
-        var status = data.stat;
-        var total_kasus = numeral(data.results[0].total_cases).format('0,0');
-        var total_sembuh = numeral(data.results[0].total_recovered).format('0,0');
-        var total_meninggal = numeral(data.results[0].total_deaths).format('0,0');
-        var total_kasus_baru_hari_ini = numeral(data.results[0].total_new_cases_today).format('0,0');
-        var total_kasus_meninggal_hari_ini = numeral(data.results[0].total_new_deaths_today).format('0,0');
-        var total_kasus_aktif = numeral(data.results[0].total_active_cases).format('0,0');
-        var sumber = data.results[0].source.url;
-
-        var number = numeral(total_kasus);
-        var string = number.format('0,0'); // '1,000'
-
-        if (status = 'ok') {
-          // swal('Success', 'Test Connected', 'success');
-          $('#total_cases').html(total_kasus);
-          $('#total_active_cases').html(total_kasus_aktif);
-          $('#total_recovered').html(total_sembuh);
-          $('#total_deaths').html(total_meninggal);
-          $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
-          $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
-          $('#source').html('<a href="' + sumber + '" target="_blank">' + sumber + '</a>');
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        // console.log(data.results[0].total_cases);
-        // console.log(data);
-      }
-    });
+    // data provonsi indonesia
+    // $.ajax({
+    //   url: 'https://api.kawalcorona.com/indonesia/provinsi',
+    //   dataType: 'json',
+    //   type: 'GET',
+    //   accept: 'application/json',
+    //   success: function(data) {
+    //     console.log(data);
+    //   }
+    // });
 
     // data indonesia
     $.ajax({
@@ -505,9 +373,61 @@
         } else {
           swal('Error', 'Server API Error', 'error');
         }
-        // console.log(data.results[0].total_cases);
-        // console.log(data.countrydata[0]);
         $('#loading').css('display', 'none');
+      }
+    });
+
+    $.getJSON("../js/data.json", function(data_provinsi) {
+      // console.log(data_provinsi);
+      var no = 1;
+      $('#data_table').empty();
+      $.each(data_provinsi, function() {
+        $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
+          this.attributes.Provinsi + '</td><td>' + numeral(this.attributes.Kasus_Posi).format('0,0') + '</td><td>' +
+          numeral(this.attributes.Kasus_Semb).format('0,0') + '</td><td>' + numeral(this.attributes.Kasus_Meni).format('0,0') + '</td></tr>');
+      });
+    });
+
+
+    // sumber dari https://github.com/idilhaq/covid19ID
+    function arrayToTable(tableData) {
+      var table = $('<table id="tabel_k" class="table table-striped table-bordered"></table>');
+      var tbody = $('<tbody></tbody>')
+      $(tableData).each(function (i, rowData) {
+          if(i == 0){
+            var thead = $('<thead></thead>');
+            var row = $('<tr></tr>');
+            $(rowData).each(function (j, cellData) {
+                if(j == 0){
+                    row.append($('<th style="width: 200px">'+cellData+'</th>'));
+                }else{
+                    row.append($('<th style="text-align:center;width: 150px">'+cellData+'</th>'));
+                }
+            });
+            thead.append(row);
+            table.append(thead);
+          }else{
+            var row = $('<tr></tr>');
+            $(rowData).each(function (j, cellData) {
+              if(j == 0){
+                  row.append($('<td>'+cellData+'</td>'));
+              }else{
+                  row.append($('<td style="text-align:center;">'+cellData+'</td>'));
+              }
+            });
+          }
+          tbody.append(row);
+
+      });
+      table.append(tbody);
+      return table;
+    }
+
+    $.ajax({
+      type: "GET",
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQw8mTbcVOX_Yyb6tXP7m851FSIDIP3pfuLAcmbfnlCNXBvevLcUUN6ooW6Wc5Egb0wmdpLSLtceC7k/pub?gid=84311913&single=true&output=csv",
+      success: function(data) {
+        $('#tabel_kasus_provinsi').append(arrayToTable(Papa.parse(data).data));
       }
     });
 
