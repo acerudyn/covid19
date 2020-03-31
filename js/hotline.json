@@ -1,0 +1,163 @@
+[{
+    "elements": {
+      "pemprov": "Kementrian Kesehatan",
+      "no_tlp": "021-521-0411",
+      "value_tlp": "+62215210411",
+      "image": "../images/kemkes.png",
+      "website": "https://covid19.kemkes.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Kementrian Kesehatan",
+      "no_tlp": "0812-1212-3119",
+      "value_tlp": "+6281212123119",
+      "image": "../images/kemkes.png",
+      "website": "https://covid19.kemkes.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "BNPB",
+      "no_tlp": "021-2982-7444",
+      "value_tlp": "+622129827444",
+      "image": "../images/bnpb.png",
+      "website": "http://covid19.bnpb.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "BNPB",
+      "no_tlp": "0812-1237-575",
+      "value_tlp": "+628121237575",
+      "image": "../images/bnpb.png",
+      "website": "http://covid19.bnpb.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Banten",
+      "no_tlp": "0852-1577-9659",
+      "value_tlp": "+6285215779659",
+      "image": "../images/pemprov-banten.png",
+      "website": "https://infocorona.bantenprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov DKI Jakarta",
+      "no_tlp": "112",
+      "value_tlp": "112",
+      "image": "../images/pemprov-dki.png",
+      "website": "https://corona.jakarta.go.id/id"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov DKI Jakarta",
+      "no_tlp": "0811-1211-2112",
+      "value_tlp": "+6281112112112",
+      "image": "../images/pemprov-dki.png",
+      "website": "https://corona.jakarta.go.id/id"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Barat",
+      "no_tlp": "119",
+      "value_tlp": "119",
+      "image": "../images/pemprov-jabar.png",
+      "website": "https://pikobar.jabarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Barat",
+      "no_tlp": "0811-2093-306",
+      "value_tlp": "+628112093306",
+      "image": "../images/pemprov-jabar.png",
+      "website": "https://pikobar.jabarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Tengah",
+      "no_tlp": "0243-580-713",
+      "value_tlp": "+62243580713",
+      "image": "../images/pemprov-jateng.png",
+      "website": "https://corona.jatengprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Tengah",
+      "no_tlp": "0823-1360-0560",
+      "value_tlp": "+6282313600560",
+      "image": "../images/pemprov-jateng.png",
+      "website": "https://corona.jatengprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Yogyakarta",
+      "no_tlp": "0274-555-585",
+      "value_tlp": "+62274555585",
+      "image": "../images/pemprov-diy.png",
+      "website": "https://corona.jogjaprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Yogyakarta",
+      "no_tlp": "0811-2764-800",
+      "value_tlp": "+628112764800",
+      "image": "../images/pemprov-diy.png",
+      "website": "https://corona.jogjaprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Timur",
+      "no_tlp": "1500 117",
+      "value_tlp": "1500117",
+      "image": "../images/pemprov-jatim.png",
+      "website": "https://checkupcovid19.jatimprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jawa Timur",
+      "no_tlp": "0813-3436-7800",
+      "value_tlp": "+6281334367800",
+      "image": "../images/pemprov-jatim.png",
+      "website": "https://checkupcovid19.jatimprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov NTB",
+      "no_tlp": "0370-622373",
+      "value_tlp": "+62370622373",
+      "image": "../images/pemprov-ntb.png",
+      "website": "https://corona.ntbprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sumatra Barat",
+      "no_tlp": "0813-6347-838",
+      "value_tlp": "+628136347838",
+      "image": "../images/pemprov-sumbar.png",
+      "website": "https://corona.sumbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sumatra Barat",
+      "no_tlp": "0811-6609-399",
+      "value_tlp": "+628116609399",
+      "image": "../images/pemprov-sumbar.png",
+      "website": "https://corona.sumbarprov.go.id/"
+    }
+  }
+]
