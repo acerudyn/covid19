@@ -366,10 +366,10 @@
         var id_total_kasus_aktif = numeral(data.countrydata[0].total_active_cases).format('0,0');
 
         if (id_status = 'ok') {
-          $('#id_total_cases').html(id_total_kasus);
-          $('#id_total_active_cases').html(id_total_kasus_aktif);
-          $('#id_total_recovered').html(id_total_sembuh);
-          $('#id_total_deaths').html(id_total_meninggal);
+          $('#id_total_cases').text(id_total_kasus);  //html
+          $('#id_total_active_cases').text(id_total_kasus_aktif);
+          $('#id_total_recovered').text(id_total_sembuh);
+          $('#id_total_deaths').text(id_total_meninggal);
         } else {
           swal('Error', 'Server API Error', 'error');
         }
