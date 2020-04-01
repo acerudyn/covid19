@@ -135,11 +135,92 @@
   },
   {
     "elements": {
+      "pemprov": "Pemprov Bali",
+      "no_tlp": "1500-451",
+      "value_tlp": "1500451",
+      "image": "../images/pemprov-bali.png",
+      "website": "https://infocorona.baliprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Bali",
+      "no_tlp": "0361251177",
+      "value_tlp": "+62361251177",
+      "image": "../images/pemprov-bali.png",
+      "website": "https://infocorona.baliprov.go.id/"
+    }
+  },
+  {
+    "elements": {
       "pemprov": "Pemprov NTB",
       "no_tlp": "0370-622373",
       "value_tlp": "+62370622373",
       "image": "../images/pemprov-ntb.png",
       "website": "https://corona.ntbprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Aceh",
+      "no_tlp": "0651-7319-111",
+      "value_tlp": "+626517319111",
+      "image": "../images/pemprov-aceh.png",
+      "website": "https://covid19.acehprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Aceh",
+      "no_tlp": "0651-221-18",
+      "value_tlp": "+6265122118",
+      "image": "../images/pemprov-aceh.png",
+      "website": "https://covid19.acehprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Bengkulu",
+      "no_tlp": "0852-8379-8600",
+      "value_tlp": "+6285283798600",
+      "image": "../images/pemprov-bengkulu.png",
+      "website": "http://covid19.bengkuluprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jambi",
+      "no_tlp": "0813-6658-1361",
+      "value_tlp": "+6281366581361",
+      "image": "../images/pemprov-jambi.png",
+      "website": "http://corona.jambiprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Jambi",
+      "no_tlp": "0813-7944-0594",
+      "value_tlp": "+6281379440594",
+      "image": "../images/pemprov-jambi.png",
+      "website": "http://corona.jambiprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Lampung",
+      "no_tlp": "0812-7415-6087",
+      "value_tlp": "+6281274156087",
+      "image": "../images/pemprov-lampung.png",
+      "website": "https://covid19.lampungprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Riau",
+      "no_tlp": "0761-23810",
+      "value_tlp": "+6276123810",
+      "image": "../images/pemprov-riau.png",
+      "website": "https://corona.riau.go.id/"
     }
   },
   {
@@ -158,6 +239,24 @@
       "value_tlp": "+628116609399",
       "image": "../images/pemprov-sumbar.png",
       "website": "https://corona.sumbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Selatan",
+      "no_tlp": "0821-5402-1119",
+      "value_tlp": "+6282154021119",
+      "image": "../images/pemprov-sulsel.png",
+      "website": "https://covid19.sulselprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Selatan",
+      "no_tlp": "0852-9935-4451",
+      "value_tlp": "+6285299354451",
+      "image": "../images/pemprov-sulsel.png",
+      "website": "https://covid19.sulselprov.go.id/"
     }
   }
 ]
