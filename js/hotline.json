@@ -162,6 +162,33 @@
   },
   {
     "elements": {
+      "pemprov": "Pemprov NTT",
+      "no_tlp": "0811-2093-306",
+      "value_tlp": "+628112093306",
+      "image": "../images/pemprov-ntt.png",
+      "website": "http://covid19.nttprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Maluku",
+      "no_tlp": "0813-4314-3438",
+      "value_tlp": "+6281343143438",
+      "image": "../images/pemprov-maluku.png",
+      "website": "https://corona.malukuprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Maluku",
+      "no_tlp": "0813-4467-7079",
+      "value_tlp": "+6281344677079",
+      "image": "../images/pemprov-maluku.png",
+      "website": "https://corona.malukuprov.go.id/"
+    }
+  },
+  {
+    "elements": {
       "pemprov": "Pemprov Aceh",
       "no_tlp": "0651-7319-111",
       "value_tlp": "+626517319111",
@@ -234,6 +261,15 @@
   },
   {
     "elements": {
+      "pemprov": "Pemprov Sumatra Barat",
+      "no_tlp": "0811-6609-399",
+      "value_tlp": "+628116609399",
+      "image": "../images/pemprov-sumbar.png",
+      "website": "https://corona.sumbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
       "pemprov": "Pemprov Sumatra Utara",
       "no_tlp": "0852-6131-7122",
       "value_tlp": "+6285261317122",
@@ -248,15 +284,6 @@
       "value_tlp": "+6282164902482",
       "image": "../images/pemprov-sumut.png",
       "website": "https://covid19.sumutprov.go.id/"
-    }
-  },
-  {
-    "elements": {
-      "pemprov": "Pemprov Sumatra Barat",
-      "no_tlp": "0811-6609-399",
-      "value_tlp": "+628116609399",
-      "image": "../images/pemprov-sumbar.png",
-      "website": "https://corona.sumbarprov.go.id/"
     }
   },
   {
@@ -342,6 +369,15 @@
   },
   {
     "elements": {
+      "pemprov": "Pemprov Kalimantan Timur",
+      "no_tlp": "0822-1796-6550",
+      "value_tlp": "+6282217966550",
+      "image": "../images/pemprov-kaltim.png",
+      "website": "https://covid19.kaltimprov.go.id/"
+    }
+  },
+  {
+    "elements": {
       "pemprov": "Pemprov Sulawesi Selatan",
       "no_tlp": "0821-5402-1119",
       "value_tlp": "+6282154021119",
@@ -356,6 +392,51 @@
       "value_tlp": "+6285299354451",
       "image": "../images/pemprov-sulsel.png",
       "website": "https://covid19.sulselprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Barat",
+      "no_tlp": "0852-2222-7048",
+      "value_tlp": "+6285222227048",
+      "image": "../images/pemprov-sulbar.png",
+      "website": "https://covid19.sulbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Barat",
+      "no_tlp": "0823-4916-4436",
+      "value_tlp": "+6282349164436",
+      "image": "../images/pemprov-sulbar.png",
+      "website": "https://covid19.sulbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Utara",
+      "no_tlp": "0853-4122-3577",
+      "value_tlp": "+6285341223577",
+      "image": "../images/pemprov-sulut.png",
+      "website": "https://corona.sulutprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Utara",
+      "no_tlp": "0888-1927-288",
+      "value_tlp": "+628881927288",
+      "image": "../images/pemprov-sulut.png",
+      "website": "https://corona.sulutprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sulawesi Tenggara",
+      "no_tlp": "0821-8743-3107",
+      "value_tlp": "+6282187433107",
+      "image": "../images/pemprov-sultra.png",
+      "website": "http://corona.sultraprov.go.id/"
     }
   }
 ]
