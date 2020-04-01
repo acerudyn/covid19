@@ -234,11 +234,56 @@
   },
   {
     "elements": {
+      "pemprov": "Pemprov Sumatra Utara",
+      "no_tlp": "0852-6131-7122",
+      "value_tlp": "+6285261317122",
+      "image": "../images/pemprov-sumut.png",
+      "website": "https://covid19.sumutprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Sumatra Utara",
+      "no_tlp": "0821-6490-2482",
+      "value_tlp": "+6282164902482",
+      "image": "../images/pemprov-sumut.png",
+      "website": "https://covid19.sumutprov.go.id/"
+    }
+  },
+  {
+    "elements": {
       "pemprov": "Pemprov Sumatra Barat",
       "no_tlp": "0811-6609-399",
       "value_tlp": "+628116609399",
       "image": "../images/pemprov-sumbar.png",
       "website": "https://corona.sumbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Kepulauan Bangka Belitung",
+      "no_tlp": "0811-7818-600",
+      "value_tlp": "+628117818600",
+      "image": "../images/pemprov-babel.png",
+      "website": "https://covid19.babelprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Kepulauan Riau",
+      "no_tlp": "(0771)733-5203",
+      "value_tlp": "+627717335203",
+      "image": "../images/pemprov-kepri.png",
+      "website": "https://corona.kepriprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Kepulauan Riau",
+      "no_tlp": "0813-7879-0002",
+      "value_tlp": "+6281378790002",
+      "image": "../images/pemprov-kepri.png",
+      "website": "https://corona.kepriprov.go.id/"
     }
   },
   {
