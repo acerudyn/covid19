@@ -3,9 +3,9 @@
       "FID": 11,
       "Kode_Provi": 31,
       "Provinsi": "DKI Jakarta",
-      "Kasus_Posi": 747,
-      "Kasus_Semb": 48,
-      "Kasus_Meni": 83
+      "Kasus_Posi": 808,
+      "Kasus_Semb": 50,
+      "Kasus_Meni": 85
     }
   },
   {
@@ -13,7 +13,7 @@
       "FID": 12,
       "Kode_Provi": 32,
       "Provinsi": "Jawa Barat",
-      "Kasus_Posi": 198,
+      "Kasus_Posi": 220,
       "Kasus_Semb": 11,
       "Kasus_Meni": 21
     }
@@ -23,9 +23,9 @@
       "FID": 16,
       "Kode_Provi": 36,
       "Provinsi": "Banten",
-      "Kasus_Posi": 142,
-      "Kasus_Semb": 2,
-      "Kasus_Meni": 4
+      "Kasus_Posi": 152,
+      "Kasus_Semb": 7,
+      "Kasus_Meni": 14
     }
   },
   {
@@ -33,7 +33,7 @@
       "FID": 13,
       "Kode_Provi": 33,
       "Provinsi": "Jawa Tengah",
-      "Kasus_Posi": 93,
+      "Kasus_Posi": 104,
       "Kasus_Semb": 0,
       "Kasus_Meni": 7
     }
@@ -43,9 +43,9 @@
       "FID": 15,
       "Kode_Provi": 35,
       "Provinsi": "Jawa Timur",
-      "Kasus_Posi": 93,
-      "Kasus_Semb": 16,
-      "Kasus_Meni": 8
+      "Kasus_Posi": 104,
+      "Kasus_Semb": 17,
+      "Kasus_Meni": 9
     }
   },
   {
@@ -53,9 +53,9 @@
       "FID": 27,
       "Kode_Provi": 73,
       "Provinsi": "Sulawesi Selatan",
-      "Kasus_Posi": 50,
+      "Kasus_Posi": 66,
       "Kasus_Semb": 0,
-      "Kasus_Meni": 1
+      "Kasus_Meni": 5
     }
   },
   {
@@ -63,29 +63,9 @@
       "FID": 14,
       "Kode_Provi": 34,
       "Provinsi": "Daerah Istimewa Yogyakarta",
-      "Kasus_Posi": 23,
+      "Kasus_Posi": 28,
       "Kasus_Semb": 1,
       "Kasus_Meni": 2
-    }
-  },
-  {
-    "attributes": {
-      "FID": 23,
-      "Kode_Provi": 64,
-      "Provinsi": "Kalimantan Timur",
-      "Kasus_Posi": 20,
-      "Kasus_Semb": 0,
-      "Kasus_Meni": 0
-    }
-  },
-  {
-    "attributes": {
-      "FID": 2,
-      "Kode_Provi": 12,
-      "Provinsi": "Sumatera Utara",
-      "Kasus_Posi": 19,
-      "Kasus_Semb": 0,
-      "Kasus_Meni": 1
     }
   },
   {
@@ -93,8 +73,38 @@
       "FID": 17,
       "Kode_Provi": 51,
       "Provinsi": "Bali",
-      "Kasus_Posi": 19,
+      "Kasus_Posi": 25,
+      "Kasus_Semb": 10,
+      "Kasus_Meni": 2
+    }
+  },
+  {
+    "attributes": {
+      "FID": 2,
+      "Kode_Provi": 12,
+      "Provinsi": "Sumatera Utara",
+      "Kasus_Posi": 22,
       "Kasus_Semb": 0,
+      "Kasus_Meni": 3
+    }
+  },
+  {
+    "attributes": {
+      "FID": 23,
+      "Kode_Provi": 64,
+      "Provinsi": "Kalimantan Timur",
+      "Kasus_Posi": 21,
+      "Kasus_Semb": 0,
+      "Kasus_Meni": 1
+    }
+  },
+  {
+    "attributes": {
+      "FID": 20,
+      "Kode_Provi": 61,
+      "Provinsi": "Kalimantan Barat",
+      "Kasus_Posi": 10,
+      "Kasus_Semb": 2,
       "Kasus_Meni": 2
     }
   },
@@ -104,18 +114,8 @@
       "Kode_Provi": 94,
       "Provinsi": "Papua",
       "Kasus_Posi": 10,
-      "Kasus_Semb": 0,
-      "Kasus_Meni": 0
-    }
-  },
-  {
-    "attributes": {
-      "FID": 20,
-      "Kode_Provi": 61,
-      "Provinsi": "Kalimantan Barat",
-      "Kasus_Posi": 9,
       "Kasus_Semb": 2,
-      "Kasus_Meni": 2
+      "Kasus_Meni": 0
     }
   },
   {
@@ -170,6 +170,16 @@
   },
   {
     "attributes": {
+      "FID": 18,
+      "Kode_Provi": 52,
+      "Provinsi": "Nusa Tenggara Barat",
+      "Kasus_Posi": 6,
+      "Kasus_Semb": 0,
+      "Kasus_Meni": 0
+    }
+  },
+  {
+    "attributes": {
       "FID": 1,
       "Kode_Provi": 11,
       "Provinsi": "Aceh",
@@ -190,31 +200,21 @@
   },
   {
     "attributes": {
-      "FID": 18,
-      "Kode_Provi": 52,
-      "Provinsi": "Nusa Tenggara Barat",
-      "Kasus_Posi": 4,
-      "Kasus_Semb": 0,
-      "Kasus_Meni": 0
-    }
-  },
-  {
-    "attributes": {
       "FID": 4,
       "Kode_Provi": 14,
       "Provinsi": "Riau",
       "Kasus_Posi": 3,
-      "Kasus_Semb": 0,
+      "Kasus_Semb": 1,
       "Kasus_Meni": 0
     }
   },
   {
     "attributes": {
-      "FID": 26,
-      "Kode_Provi": 72,
-      "Provinsi": "Sulawesi Tengah",
+      "FID": 25,
+      "Kode_Provi": 71,
+      "Provinsi": "Sulawesi Utara",
       "Kasus_Posi": 3,
-      "Kasus_Semb": 0,
+      "Kasus_Semb": 1,
       "Kasus_Meni": 0
     }
   },
@@ -245,7 +245,7 @@
       "Provinsi": "Kepulauan Bangka Belitung",
       "Kasus_Posi": 2,
       "Kasus_Semb": 0,
-      "Kasus_Meni": 0
+      "Kasus_Meni": 1
     }
   },
   {
@@ -260,11 +260,11 @@
   },
   {
     "attributes": {
-      "FID": 25,
-      "Kode_Provi": 71,
-      "Provinsi": "Sulawesi Utara",
+      "FID": 26,
+      "Kode_Provi": 72,
+      "Provinsi": "Sulawesi Tengah",
       "Kasus_Posi": 2,
-      "Kasus_Semb": 1,
+      "Kasus_Semb": 0,
       "Kasus_Meni": 0
     }
   },
@@ -304,7 +304,7 @@
       "Kode_Provi": 81,
       "Provinsi": "Maluku",
       "Kasus_Posi": 1,
-      "Kasus_Semb": 0,
+      "Kasus_Semb": 1,
       "Kasus_Meni": 0
     }
   },
