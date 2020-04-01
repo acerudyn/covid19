@@ -270,7 +270,7 @@
   },
   {
     "elements": {
-      "pemprov": "Kepulauan Riau",
+      "pemprov": "Pemprov Kepulauan Riau",
       "no_tlp": "(0771)733-5203",
       "value_tlp": "+627717335203",
       "image": "../images/pemprov-kepri.png",
@@ -279,11 +279,65 @@
   },
   {
     "elements": {
-      "pemprov": "Kepulauan Riau",
+      "pemprov": "Pemprov Kepulauan Riau",
       "no_tlp": "0813-7879-0002",
       "value_tlp": "+6281378790002",
       "image": "../images/pemprov-kepri.png",
       "website": "https://corona.kepriprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Barat",
+      "no_tlp": "0561-8176-537",
+      "value_tlp": "+625618176537",
+      "image": "../images/pemprov-kalbar.png",
+      "website": "http://covid19.kalbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Barat",
+      "no_tlp": "0812-9211-9119",
+      "value_tlp": "+6281292119119",
+      "image": "../images/pemprov-kalbar.png",
+      "website": "http://covid19.kalbarprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Tengah",
+      "no_tlp": "0812-5086-776",
+      "value_tlp": "+628125086776",
+      "image": "../images/pemprov-kalteng.png",
+      "website": "https://corona.kalteng.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Tengah",
+      "no_tlp": "0823-5772-0665",
+      "value_tlp": "+6282357720665",
+      "image": "../images/pemprov-kalteng.png",
+      "website": "https://corona.kalteng.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Selatan",
+      "no_tlp": "0821-5771-8672",
+      "value_tlp": "+6282157718672",
+      "image": "../images/pemprov-kalsel.png",
+      "website": "http://corona.kalselprov.go.id/"
+    }
+  },
+  {
+    "elements": {
+      "pemprov": "Pemprov Kalimantan Selatan",
+      "no_tlp": "0821-5771-8673",
+      "value_tlp": "+6282157718673",
+      "image": "../images/pemprov-kalsel.png",
+      "website": "http://corona.kalselprov.go.id/"
     }
   },
   {
