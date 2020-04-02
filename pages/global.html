@@ -372,6 +372,11 @@
           swal('Error', 'Server API Error', 'error');
         }
         $('#loading').css('display', 'none');
+      },
+      error: function (textStatus, errorThrown) {
+          var message = errorThrown;
+          swal('Error', 'API Server '+ message, 'error');
+          $('#loading').css('display', 'none');
       }
     });
 
