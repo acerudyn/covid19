@@ -343,41 +343,60 @@
     });
 
     // data global
+    // $.ajax({
+    //   url: 'https://thevirustracker.com/free-api?global=stats',
+    //   dataType: 'json',
+    //   success: function(data) {
+    //     var status = data.stat;
+    //     var total_kasus = numeral(data.results[0].total_cases).format('0,0');
+    //     var total_sembuh = numeral(data.results[0].total_recovered).format('0,0');
+    //     var total_meninggal = numeral(data.results[0].total_deaths).format('0,0');
+    //     var total_kasus_baru_hari_ini = numeral(data.results[0].total_new_cases_today).format('0,0');
+    //     var total_kasus_meninggal_hari_ini = numeral(data.results[0].total_new_deaths_today).format('0,0');
+    //     var total_kasus_aktif = numeral(data.results[0].total_active_cases).format('0,0');
+    //     var sumber = data.results[0].source.url;
+    //
+    //     var number = numeral(total_kasus);
+    //     var string = number.format('0,0'); // '1,000'
+    //
+    //     if (status = 'ok') {
+    //       // swal('Success', 'Test Connected', 'success');
+    //       $('#total_cases').html(total_kasus);
+    //       $('#total_active_cases').html(total_kasus_aktif);
+    //       $('#total_recovered').html(total_sembuh);
+    //       $('#total_deaths').html(total_meninggal);
+    //       $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
+    //       $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
+    //       $('#source').html('<a href="' + sumber + '" target="_blank">' + sumber + '</a>');
+    //     } else {
+    //       swal('Error', 'Server API Error', 'error');
+    //     }
+    //     $('#loading').css('display', 'none');
+    //   },
+    //   error: function (textStatus, errorThrown) {
+    //       var message = errorThrown;
+    //       swal('Error', 'API Server '+ message, 'error');
+    //       $('#loading').css('display', 'none');
+    //   }
+    // });
+
     $.ajax({
-      url: 'https://thevirustracker.com/free-api?global=stats',
+      url: 'https://corona.lmao.ninja/all',
       dataType: 'json',
       success: function(data) {
-        var status = data.stat;
-        var total_kasus = numeral(data.results[0].total_cases).format('0,0');
-        var total_sembuh = numeral(data.results[0].total_recovered).format('0,0');
-        var total_meninggal = numeral(data.results[0].total_deaths).format('0,0');
-        var total_kasus_baru_hari_ini = numeral(data.results[0].total_new_cases_today).format('0,0');
-        var total_kasus_meninggal_hari_ini = numeral(data.results[0].total_new_deaths_today).format('0,0');
-        var total_kasus_aktif = numeral(data.results[0].total_active_cases).format('0,0');
-        var sumber = data.results[0].source.url;
-
-        var number = numeral(total_kasus);
-        var string = number.format('0,0'); // '1,000'
-
-        if (status = 'ok') {
-          // swal('Success', 'Test Connected', 'success');
-          $('#total_cases').html(total_kasus);
-          $('#total_active_cases').html(total_kasus_aktif);
-          $('#total_recovered').html(total_sembuh);
-          $('#total_deaths').html(total_meninggal);
-          $('#total_new_cases_today').html(total_kasus_baru_hari_ini);
-          $('#total_new_deaths_today').html(total_kasus_meninggal_hari_ini);
-          $('#source').html('<a href="' + sumber + '" target="_blank">' + sumber + '</a>');
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        $('#loading').css('display', 'none');
+          var sumber = 'JHUCSSE (Johns Hopikins University)';
+          $('#total_cases').html(numeral(data.cases).format('0,0'));
+          $('#total_active_cases').html(numeral(data.active).format('0,0'));
+          $('#total_recovered').html(numeral(data.recovered).format('0,0'));
+          $('#total_deaths').html(numeral(data.deaths).format('0,0'));
+          $('#source').html('<a href="#">' + sumber + '</a>');
+          $('#loading').css('display', 'none');
       },
       error: function (textStatus, errorThrown) {
           var message = errorThrown;
           swal('Error', 'API Server '+ message, 'error');
           $('#loading').css('display', 'none');
-      }
+        }
     });
 
     // data global country from kawalcorona.com
