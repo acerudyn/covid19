@@ -511,44 +511,26 @@
     });
 
     // data indonesia
-    $.ajax({
-      url: 'https://thevirustracker.com/free-api?countryTotal=ID',
-      dataType: 'json',
-      success: function(data) {
-        var id_status = data.stat;
-        var id_total_kasus = numeral(data.countrydata[0].total_cases).format('0,0');
-        var id_total_sembuh = numeral(data.countrydata[0].total_recovered).format('0,0');
-        var id_total_meninggal = numeral(data.countrydata[0].total_deaths).format('0,0');
-        var id_total_kasus_aktif = numeral(data.countrydata[0].total_active_cases).format('0,0');
-
-        if (id_status = 'ok') {
-          $('#id_total_cases').html(id_total_kasus);
-          $('#id_total_active_cases').html(id_total_kasus_aktif);
-          $('#id_total_recovered').html(id_total_sembuh);
-          $('#id_total_deaths').html(id_total_meninggal);
-        } else {
-          swal('Error', 'Server API Error', 'error');
-        }
-        // console.log(data.results[0].total_cases);
-        // console.log(data.countrydata[0]);
-        $('#loading').css('display', 'none');
-      },
-      error: function (textStatus, errorThrown) {
-          var message = errorThrown;
-          swal('Error', 'API Server '+ message, 'error');
-          $('#loading').css('display', 'none');
-        }
-    });
-
     // $.ajax({
-    //   url: 'https://corona.lmao.ninja/countries/id',
+    //   url: 'https://thevirustracker.com/free-api?countryTotal=ID',
     //   dataType: 'json',
     //   success: function(data) {
-    //     // console.log(data.cases);
-    //     $('#id_total_cases').html(numeral(data.cases).format('0,0'));
-    //     $('#id_total_active_cases').html(numeral(data.active).format('0,0'));
-    //     $('#id_total_recovered').html(numeral(data.recovered).format('0,0'));
-    //     $('#id_total_deaths').html(numeral(data.deaths).format('0,0'));
+    //     var id_status = data.stat;
+    //     var id_total_kasus = numeral(data.countrydata[0].total_cases).format('0,0');
+    //     var id_total_sembuh = numeral(data.countrydata[0].total_recovered).format('0,0');
+    //     var id_total_meninggal = numeral(data.countrydata[0].total_deaths).format('0,0');
+    //     var id_total_kasus_aktif = numeral(data.countrydata[0].total_active_cases).format('0,0');
+    //
+    //     if (id_status = 'ok') {
+    //       $('#id_total_cases').html(id_total_kasus);
+    //       $('#id_total_active_cases').html(id_total_kasus_aktif);
+    //       $('#id_total_recovered').html(id_total_sembuh);
+    //       $('#id_total_deaths').html(id_total_meninggal);
+    //     } else {
+    //       swal('Error', 'Server API Error', 'error');
+    //     }
+    //     // console.log(data.results[0].total_cases);
+    //     // console.log(data.countrydata[0]);
     //     $('#loading').css('display', 'none');
     //   },
     //   error: function (textStatus, errorThrown) {
@@ -557,6 +539,24 @@
     //       $('#loading').css('display', 'none');
     //     }
     // });
+
+    $.ajax({
+      url: 'https://corona.lmao.ninja/countries/id',
+      dataType: 'json',
+      success: function(data) {
+        // console.log(data.cases);
+        $('#id_total_cases').html(numeral(data.cases).format('0,0'));
+        $('#id_total_active_cases').html(numeral(data.active).format('0,0'));
+        $('#id_total_recovered').html(numeral(data.recovered).format('0,0'));
+        $('#id_total_deaths').html(numeral(data.deaths).format('0,0'));
+        $('#loading').css('display', 'none');
+      },
+      error: function (textStatus, errorThrown) {
+          var message = errorThrown;
+          swal('Error', 'API Server '+ message, 'error');
+          $('#loading').css('display', 'none');
+        }
+    });
 
   });
 </script>
