@@ -151,7 +151,8 @@
             <!-- space for data from ajax -->
           </tbody>
         </table>
-        <p>sumber dari : <a href="https://kawalcorona.com/" target="_blank">https://kawalcorona.com/</a> </p>
+        <!-- <p>sumber dari : <a href="https://kawalcorona.com/" target="_blank">https://kawalcorona.com/</a> </p> -->
+        <p>sumber dari : <a href="https://api.covid19api.com/summary" target="_blank">https://kawalcorona.com/</a> </p>
 
       </div>
     </div>
@@ -401,18 +402,25 @@
 
     // data global country from kawalcorona.com
       $.ajax({
-        url: 'https://api.kawalcorona.com/',
+        url: 'https://api.covid19api.com/summary', // 'https://api.kawalcorona.com/',
         dataType: 'json',
         type: 'GET',
         accept: 'application/json',
         success: function(data) {
-          // console.log(data);
+          // console.log(data.Countries[0].Country);
+          var result = data.Countries;
           var no = 1;
           $('#data_table').empty();
-          $.each(data, function() {
+          // $.each(data, function() {
+          //   $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
+          //     this.attributes.Country_Region + '</td><td>' + numeral(this.attributes.Confirmed).format('0,0') + '</td><td>' +
+          //     numeral(this.attributes.Recovered).format('0,0') + '</td><td>' + numeral(this.attributes.Deaths).format('0,0') + '</td></tr>');
+          // });
+
+          $.each(result, function() {
             $('#data_table').append('<tr><td class="text-center">' + no++ + '</td><td>' +
-              this.attributes.Country_Region + '</td><td>' + numeral(this.attributes.Confirmed).format('0,0') + '</td><td>' +
-              numeral(this.attributes.Recovered).format('0,0') + '</td><td>' + numeral(this.attributes.Deaths).format('0,0') + '</td></tr>');
+              this.Country + '</td><td>' + numeral(this.TotalConfirmed).format('0,0') + '</td><td>' +
+              numeral(this.TotalRecovered).format('0,0') + '</td><td>' + numeral(this.TotalDeaths).format('0,0') + '</td></tr>');
           });
           $('#loading').css('display', 'none');
         }
